@@ -1,0 +1,25 @@
+{
+  "name": "noderestapi",
+  "version": "1.0.0",
+  "description": "REST API Node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/febrinurrohman/noderestapi.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "node",
+    "js"
+  ],
+  "author": "Febri Nur Rohman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/febrinurrohman/noderestapi/issues"
+  },
+  "homepage": "https://github.com/febrinurrohman/noderestapi#readme"
+}
