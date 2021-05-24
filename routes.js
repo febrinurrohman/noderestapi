@@ -1,12 +1,13 @@
 'use strict';
 
 module.exports = function (app) {
-    var controller = require('./controller');
+    var mahasiswa = require('./mahasiswa');
 
-    app.route('/').get(controller.index);
-    app.route('/mahasiswa').get(controller.getAllMahasiswa);
-    app.route('/mahasiswa/:id').get(controller.getDetailMahasiswa);
-    app.route('/mahasiswa').post(controller.addMahasiswa);
-    app.route('/mahasiswa/').put(controller.updateMahasiswa);
-    app.route('/mahasiswa/').delete(controller.deleteMahasiswa);
+    app.route('/').get(mahasiswa.index);
+    app.route('/mahasiswa').get(mahasiswa.getAllMahasiswa);
+    app.route('/mahasiswa/:id').get(mahasiswa.getDetailMahasiswa);
+    app.route('/mahasiswa').post(mahasiswa.addMahasiswa);
+    app.route('/mahasiswa/').put(mahasiswa.updateMahasiswa);
+    app.route('/mahasiswa/').delete(mahasiswa.deleteMahasiswa);
+    app.route('/mahasiswa_matakuliah').get(mahasiswa.getMahasiswaMatakuliah);
 }
